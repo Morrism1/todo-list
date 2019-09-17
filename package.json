@@ -4,7 +4,11 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "elctron-builder -mwl",
+    "build:mac": "electron-builder -m",
+    "build:win": "electron-builder -w",
+    "build:linux": "electron-builder -l"
   },
   "repository": "https://github.com/Morrism1/todo-list",
   "keywords": [
@@ -20,6 +24,7 @@
     "electron": "^6.0.9"
   },
   "dependencies": {
+    "electron-builder": "^21.2.0",
     "electron-reload": "^1.5.0"
   }
 }
